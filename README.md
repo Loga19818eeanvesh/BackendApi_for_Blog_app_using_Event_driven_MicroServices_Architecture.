@@ -1,5 +1,5 @@
-# BackendApi_for_Blog_app_using_Event_driven_MicroServices_Architecture.
-App contains four microservices 
+# BackendApi for BlogApp using Event driven MicroServices Architecture.
+Api contains four microservices 
 1. Posts service to post blog
 2. Comments service to add comments to post
 3. Query service to send all posts to client
