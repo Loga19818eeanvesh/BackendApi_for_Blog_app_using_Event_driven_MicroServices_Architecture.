@@ -1,10 +1,10 @@
 # BackendApi for BlogApp using Event driven MicroServices Architecture.
 Api contains five microservices 
-1. Posts service to post blog
-2. Comments service to add comments to post
-3. Query service to send all posts to client
-4. Moderation service to filter comments
-5. Event-bus to send events between services
+1. Posts service to post blog running on port 2828
+2. Comments service to add comments to post running on port 2803
+3. Query service to send all posts to client running on port 2800
+4. Moderation service to filter comments running on port 2801
+5. Event-bus to send events between services running on port 2823
 
 ## Tools/Technologies used
 Node.js, Express.js
