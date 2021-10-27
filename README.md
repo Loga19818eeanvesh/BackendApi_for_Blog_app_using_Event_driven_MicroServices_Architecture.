@@ -1,9 +1,10 @@
 # BackendApi for BlogApp using Event driven MicroServices Architecture.
-Api contains four microservices 
+Api contains five microservices 
 1. Posts service to post blog
 2. Comments service to add comments to post
 3. Query service to send all posts to client
-4. Event-bus to send events between services
+4. Moderation service to filter comments
+5. Event-bus to send events between services
 
 ## Tools/Technologies used
 Node.js, Express.js
