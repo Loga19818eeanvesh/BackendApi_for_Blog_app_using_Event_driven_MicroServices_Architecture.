@@ -12,10 +12,10 @@ app.post('/events',  (req,res) => {
 
     events.push(event);
 
-    axios.post('http://localhost:2828/events',event).catch((err)=>{console.log(err);});
-    axios.post('http://localhost:2803/events',event).catch((err)=>{console.log(err);});
-    axios.post('http://localhost:2800/events',event).catch((err)=>{console.log(err);});
-    axios.post('http://localhost:2801/events',event).catch((err)=>{console.log(err);});
+    axios.post('http://posts-clusterip-srv:2828/events',event).catch((err)=>{console.log(err);});
+    axios.post('http://comments-srv:2803/events',event).catch((err)=>{console.log(err);});
+    axios.post('http://query-srv:2800/events',event).catch((err)=>{console.log(err);});
+    axios.post('http://moderation-srv:2801/events',event).catch((err)=>{console.log(err);});
 
     res.send({status : 'OK'});
 })

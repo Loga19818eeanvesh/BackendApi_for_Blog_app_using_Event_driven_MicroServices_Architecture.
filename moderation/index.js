@@ -10,7 +10,7 @@ app.post('/events',(req,res)=>{
     if(req.body.type=="CommentCreated"){
         const status = req.body.data.content.includes('loga19818eeanvesh') ? 'rejected' : 'approved' ;
 
-        axios.post('http://localhost:2823/events',{
+        axios.post('http://event-bus-srv:2823/events',{
             type : "CommentModerated",
             data:{
                 ...req.body.data,

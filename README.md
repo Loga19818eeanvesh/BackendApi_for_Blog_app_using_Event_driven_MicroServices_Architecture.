@@ -7,7 +7,7 @@ Api contains five microservices
 5. Event-bus to send events between services running on port 2823
 
 ## Tools/Technologies used
-Node.js, Express.js
+Node.js, Express.js, Docker, Kubernetes
 
 ## How to start
 1. Run 'npm install' on terminal in each subfolder to download all dependencies  

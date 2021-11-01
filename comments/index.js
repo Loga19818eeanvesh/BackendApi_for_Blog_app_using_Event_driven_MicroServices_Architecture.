@@ -35,7 +35,7 @@ app.post('/posts/:id/comments',async (req,res)=>{
             status:"pending"
         });
     }
-    await axios.post('http://localhost:2823/events',{
+    await axios.post('http://event-bus-srv:2823/events',{
         type:"CommentCreated",
         data:{
             postId : id,
@@ -58,7 +58,7 @@ app.post('/events',async (req,res)=>{
                     arr[index].status=req.body.data.status;
                 }
             });
-            await axios.post("http://localhost:2823/events",{
+            await axios.post("http://event-bus-srv:2823/events",{
                 type:"CommentUpdated",
                 data:{
                     ...req.body.data

@@ -72,7 +72,7 @@ app.post('/events',(req,res)=>{
 
 app.listen(2800,async ()=>{
     console.log('port 2800');
-    const res=await axios.get('http://localhost:2823/events');
+    const res=await axios.get('http://event-bus-srv:2823/events');
     for(let event of res.data){
         const type=event.type;
         const data=event.data;
