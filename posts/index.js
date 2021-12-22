@@ -38,5 +38,6 @@ app.post('/events',(req,res)=>{
 })
 
 app.listen(2828,()=>{
-    console.log('port 2828');
+    
+    console.log('running on port 2828');
 });

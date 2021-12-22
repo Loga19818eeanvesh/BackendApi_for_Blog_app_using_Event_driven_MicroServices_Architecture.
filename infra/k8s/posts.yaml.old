@@ -5,4 +5,8 @@ metadata:
 spec:
   containers:
     - name: posts
-      image: loga19818eeanvesh/posts
+      imagePullPolicy: Never
+      image: loga19818eeanvesh/posts:0.0.1
+      
+
+
